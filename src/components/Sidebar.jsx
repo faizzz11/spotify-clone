@@ -1,12 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Sidebar(){
- return <Container>Sidebar</Container>;
+export default function Sidebar() {
+  return (
+    <Container>
+      <div className="top__links">
+        <div className="logo">
+          <img
+            src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_White.png"
+            alt="spotify logo"
+          />
+        </div>
+      </div>
+    </Container>
+  );
 }
 
-const Container =styled.div`
- background-color: black;
+const Container = styled.div`
+  background-color: black;
   color: #b3b3b3;
   display: flex;
   flex-direction: column;
@@ -39,4 +50,5 @@ const Container =styled.div`
         }
       }
     }
-  }`;
+  }
+`;
